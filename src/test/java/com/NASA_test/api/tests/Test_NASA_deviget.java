@@ -47,7 +47,7 @@ public class Test_NASA_deviget {
 
         List<Map<String, String>> first10photosCuriositySols = photoServiceHelper.getPhotoNASAWithPageFilter(10, "sol", "1000");
         List<Map<String, String>> first10photosCuriosityEarthDate = photoServiceHelper.getPhotoNASAWithPageFilter(10, "earth_date", "2015-05-30");
-        Assert.assertTrue(first10photosCuriositySols.equals(first10photosCuriosityEarthDate));
+        Assert.assertTrue(first10photosCuriositySols.equals(first10photosCuriosityEarthDate),"Error - photos does not match each other");
 
     }
 
